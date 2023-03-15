@@ -1,0 +1,149 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+}
+
+:root{
+    --color-primary:#6C4AB6;
+    --color-secondary:#FFB544;
+
+    /* Text Color */
+    --color-text:#432C7A;
+
+    /* Data Color */
+    --data-succes:#0FCC8C;
+    --data-warning:#FFB544;
+    --data-ready:#6C4AB6;
+
+    /* transisi */
+    --transition: all 400ms ease;
+}
+
+/* --------------------- Navbar --------------------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.navbar-item{
+    margin: 10px 20px;
+}
+
+.toggle{
+    margin: 0 20px;
+    display: none;
+}
+
+.navbar-link{
+    color: white;
+    transition: var(--transition);
+}
+
+.navbar-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+
+.navbar-button{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: var(--color-text);
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.navbar-button:hover{
+    color: white;
+    background: transparent;
+    border-color: var(--color-primary);
+    transition: var(--transition);
+}
+/* ---------------------  End Navbar --------------------- */
+
+/* --------------------- Header --------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg_image{
+    background: linear-gradient(90.12deg, #3F2082 28.65%, rgba(108, 74, 182, 0) 99.92%), url(./img/headerimg.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    padding: 40px;
+}
+
+.span {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.header_title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header_title h1{
+    font-size: 3rem;
+}
+
+.header_text{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn_start{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-secondary);
+    color: var(--color-text);
+    border-radius: 0.8rem;
+}
+/* --------------------- End Header --------------------- */
+
+/* --------------------- About --------------------- */
+
+/* --------------------- End About --------------------- */
