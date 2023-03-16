@@ -156,7 +156,9 @@ main {
 .about{
     display: flex;
     align-items: center;
-    margin: 4rem 0;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem auto;
 }
 
 .about_text p {
@@ -180,7 +182,7 @@ main {
 }
 
 .img_about{
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 /* --------------------- End About --------------------- */
