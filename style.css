@@ -41,6 +41,7 @@ html{
 .navbar-list{
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     align-items: center;
     padding: 18px 0;
 }
@@ -76,16 +77,16 @@ html{
     padding: 0.8rem 1.5rem;
     background: white;
     color: var(--color-text);
-    border-radius: 0.8rem;
+    border-radius: 50px;
     border: 1px solid transparent;
     transition: var(--transition);
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.navbar-button:hover{
-    color: white;
-    background: transparent;
-    border-color: var(--color-primary);
-    transition: var(--transition);
+.navbar-navigate {
+    display: flex;
+    gap: 0.5rem;
 }
 /* ---------------------  End Navbar --------------------- */
 
@@ -140,10 +141,46 @@ header{
     padding: 0.8rem 1.5rem;
     background: var(--color-secondary);
     color: var(--color-text);
-    border-radius: 0.8rem;
+    border-radius: 50px;
+    cursor: pointer;
+
 }
 /* --------------------- End Header --------------------- */
 
 /* --------------------- About --------------------- */
+main {
+    width: 75%;
+    margin: auto;
+}
 
+.about{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.about_text p {
+    width: 400px;
+}
+
+.about_title{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.about_value{
+    margin: 2rem 0;
+    color: var(--color-text);
+}
+
+.order_direct{
+    color: var(--color-primary);
+}
+
+.img_about{
+    width: 350px;
+    height: auto;
+}
 /* --------------------- End About --------------------- */
